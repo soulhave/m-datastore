@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="helloWorldApp">
+
+<head>
+    <title>M-Datastore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="js/dependecies.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body ng-controller="AppCtrl as app">
+    <section layout="row" class="contentMain" flex>
+        <md-sidenav class="md-sidenav-left" md-component-id="left" md-is-locked-open="$mdMedia('gt-md')" md-whiteframe="4" flex=15>
+            <md-toolbar class="md-theme-indigo">
+                <h1 class="md-toolbar-tools">M-Datastore</h1>
+            </md-toolbar>
+            <md-content layout-padding>
+                <md-sidemenu locked="true">
+                    <md-sidemenu-group>
+                        <md-sidemenu-content md-icon="apps" md-heading="Datastore" md-arrow="true">
+                            <md-sidemenu-button href="#">Delete all kinds</md-sidemenu-button>
+                            <md-sidemenu-button href="#">Max Entitys</md-sidemenu-button>
+                        </md-sidemenu-content>
+                </md-sidemenu>
+            </md-content>
+        </md-sidenav>
+
+        <div layout="column" flex>
+            <md-toolbar class="md-hue-2">
+                <div class="md-toolbar-tools" hide-gt-md>
+                    <md-button class="md-icon-button" aria-label="Settings" ng-click="toggleLeft()">
+                        <i class="material-icons">menu</i>
+                    </md-button>
+                    <h2 flex md-truncate class="menuLabel">M-Datastore</h2>
+                </div>
+            </md-toolbar>
+            <md-content flex layout-padding>
+                <div layout="column" layout-align="top right">
+                    <div ng-view class="view-animate"></div>
+                </div>
+                <div flex></div>
+            </md-content>
+        </div>
+    </section>
+</body>
+
+</html>

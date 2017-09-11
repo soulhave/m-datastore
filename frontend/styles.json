@@ -1,0 +1,5 @@
+[
+    "./node_modules/angular-material/angular-material.css",
+    "./node_modules/angular-material-sidemenu/dest/angular-material-sidemenu.css",
+    "./assets/**/*.css"
+]
