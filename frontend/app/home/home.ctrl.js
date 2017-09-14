@@ -1,5 +1,5 @@
-angular.module('helloWorldApp')
-    .controller('HomeCtrl', ['$scope', 'HomeService', function ($scope, service) {
+angular.module('ManagerDataStore')
+    .controller('HomeCtrl', ['$scope', 'HomeService', 'UtilService', function ($scope, service, util) {
         this.selectedNamespaces = [];
         this.namespaceList = service.getNameOfNamespaces();
         this.kinds = [];
@@ -78,6 +78,15 @@ angular.module('helloWorldApp')
             }
             
             this.kinds = this.kinds.map(selectAll);
+        }
+
+        /**
+         * Show dialog and close.
+         */
+        this.showWaiting = function () {
+            console.log("...");
+            util.showLoading();
+            setTimeout(util.hideLoading, 4000);
         }
 
     }]);

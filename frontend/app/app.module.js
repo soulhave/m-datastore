@@ -1,4 +1,4 @@
-angular.module('helloWorldApp', [
+angular.module('ManagerDataStore', [
     'ngRoute', 'ngMaterial', 'ngMaterialSidemenu'
 ]).config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')

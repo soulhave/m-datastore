@@ -1,4 +1,4 @@
-angular.module('helloWorldApp')
+angular.module('ManagerDataStore')
     .config(['$routeProvider',
         function ($routeProvider) {
             $routeProvider

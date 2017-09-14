@@ -1,4 +1,4 @@
-angular.module('helloWorldApp')
+angular.module('ManagerDataStore')
     .controller('AppCtrl', function ($scope, $timeout, $mdSidenav) {
         $scope.toggleLeft = buildToggler('left');
 

@@ -1,4 +1,4 @@
-angular.module('helloWorldApp')
+angular.module('ManagerDataStore')
     .service('HomeService', function () {
         /**
          * Return all existent namespaces.
